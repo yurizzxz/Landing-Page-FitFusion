@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="min-h-screen border-t border-b border-[#252525] bg-[#070707] text-white pt-20" id="about">
-      <section className="container mt-24 flex flex-col lg:flex-row items-center justify-between mx-auto px-4">
-        <article className="lg:w-1/1 mb-8 lg:mb-0">
+    <main className="min-h-[calc(90vh-200px)] border-t border-b border-[#151515] bg-[#070707] text-white pt-20" id="about">
+      <section className="container mt-24 flex flex-col lg:flex-row-reverse items-center justify-between mx-auto px-4">
+        <article className="lg:w-1/2 mb-8 lg:mb-0">
           <header>
             <h1 className="text-5xl lg:text-5xl font-bold leading-tight mb-6">
               Sobre <span className="text-[#00bb83]">FitFusion</span>
