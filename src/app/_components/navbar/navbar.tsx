@@ -116,7 +116,7 @@ export default function Navbar() {
             </li>
             <li>
               <a href="#faq" className="hover:text-[#00bb83]">
-                Perguntas frequentes
+                Perguntas Frequentes
               </a>
             </li>
           </ul>
