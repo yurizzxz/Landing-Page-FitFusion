@@ -26,16 +26,16 @@ export default function Hero() {
             especialmente criados. Comece hoje e alcance seus objetivos!
           </p>
 
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col w-full lg:flex-row justify-center gap-4">
             <a
               href="/start"
-              className="bg-[#101010] border border-[#252525] text-[#00bb83] px-7 py-4 rounded-full font-semibold shadow-md hover:border-[#00bb83] transition-all"
+              className="bg-[#101010] border w-full lg:w-[15rem] border-[#252525] text-[#00bb83] px-7 py-4 rounded-full font-semibold shadow-md hover:border-[#00bb83] transition-all"
             >
               Começar Agora
             </a>
             <a
               href="/learn-more"
-              className="border border-[#fff] px-7 py-4 rounded-full font-semibold hover:bg-[#101010] hover:text-[#00bb83] transition-all"
+              className="border border-[#fff] w-full lg:w-[15rem] px-7 py-4 rounded-full font-semibold hover:bg-[#101010] hover:text-[#00bb83] transition-all"
             >
               Saiba Mais
             </a>

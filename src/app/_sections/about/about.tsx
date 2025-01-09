@@ -6,8 +6,8 @@ export default function About() {
       <section className="container mt-24 flex flex-col lg:flex-row-reverse items-center justify-between mx-auto px-4">
         <article className="lg:w-1/2 mb-8 lg:mb-0">
           <header>
-            <h1 className="text-5xl lg:text-5xl font-bold leading-tight mb-6">
-              Sobre <span className="text-[#00bb83]">FitFusion</span>
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
+              Sobre o <span className="text-[#00bb83]">FitFusion</span>
             </h1>
           </header>
           <p className="text-lg lg:text-xl max-w-2xl mb-8">

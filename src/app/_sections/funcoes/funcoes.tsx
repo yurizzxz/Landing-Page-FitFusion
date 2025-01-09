@@ -3,7 +3,7 @@ export default function Funcoes() {
     {
       title: "Controle de Alimentação",
       description: "Gerencie sua alimentação com acompanhamento diário.",
-      icon: "fastfood", 
+      icon: "fastfood",
     },
     {
       title: "Controle de Treino",
@@ -23,10 +23,8 @@ export default function Funcoes() {
       id="functions"
     >
       <section className="container mx-auto px-4">
-        <header className="mt-20 text-center">
-          <h1 className="text-5xl lg:text-5xl font-bold leading-tight mb-12">
-            Funcionalidades
-          </h1>
+        <header className="mt-14 lg:text-center">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-14">Funcionalidades</h1>
         </header>
         <div className="cardSection flex justify-center flex-col lg:flex-row gap-4">
           {cards.map((card, index) => (
@@ -36,7 +34,10 @@ export default function Funcoes() {
             >
               <div className="card-body">
                 <div className="icon-container mb-4">
-                  <span className="material-icons text-[#00bb83]" style={{ fontSize: "48px" }}>
+                  <span
+                    className="material-icons text-[#00bb83]"
+                    style={{ fontSize: "48px" }}
+                  >
                     {card.icon}
                   </span>
                 </div>
