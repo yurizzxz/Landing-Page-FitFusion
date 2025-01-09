@@ -2,27 +2,29 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="min-h-screen bg-[#070707] text-white pt-20" id="about">
-      <div className="container flex flex-col lg:flex-row items-center justify-between mx-auto  px-6 lg:px-12">
-        <div className="lg:w-1/2 mb-8 lg:mb-0">
-          <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-            Sobre <span className="text-[#00bb83]">FitFusion</span>
-          </h1>
+    <main className="min-h-screen border-t border-b border-[#252525] bg-[#070707] text-white pt-20" id="about">
+      <section className="container mt-24 flex flex-col lg:flex-row items-center justify-between mx-auto px-4">
+        <article className="lg:w-1/1 mb-8 lg:mb-0">
+          <header>
+            <h1 className="text-5xl lg:text-5xl font-bold leading-tight mb-6">
+              Sobre <span className="text-[#00bb83]">FitFusion</span>
+            </h1>
+          </header>
           <p className="text-lg lg:text-xl max-w-2xl mb-8">
             FitFusion é uma plataforma inovadora para treinos e bem-estar, oferecendo planos personalizados e acesso a recursos exclusivos.
           </p>
-        </div>
+        </article>
 
-        <div className="lg:w-1/3">
+        <figure className="lg:w-1/3 mt-6 lg:mt-0">
           <Image
             src="/next.svg"
             alt="FitFusion"
-            width={400} 
-            height={400} 
+            width={400}
+            height={400}
             className="w-full h-auto object-cover rounded-lg"
           />
-        </div>
-      </div>
-    </section>
+        </figure>
+      </section>
+    </main>
   );
 }
