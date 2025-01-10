@@ -4,6 +4,8 @@ import Hero from "./_sections/hero/hero";
 import About from "./_sections/about/about";
 import Funcoes from "./_sections/funcoes/funcoes";
 import Plans from "./_sections/plans/plans";
+import Footer from "./_sections/footer/footer";
+import FAQ from "./_sections/faq/faq";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <About />
       <Funcoes />
       <Plans />
+      <FAQ />
+      <Footer />
     </>
   );
 }

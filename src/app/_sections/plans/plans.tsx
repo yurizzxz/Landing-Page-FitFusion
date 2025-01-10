@@ -40,12 +40,12 @@ export default function Planos() {
 
   return (
     <section
-      className="min-h-[calc(90vh-100px)] border-b border-[#151515] bg-[#070707] text-white py-16"
-      id="planos"
+      className="min-h-[calc(90vh-200px)] border-b border-[#151515] bg-[#070707] text-white pb-28 pt-14"
+      id="plans"
     >
       <div className="container mx-auto items-center px-5">
         <header className="lg:text-center mb-16 mt-28 lg:mt-16">
-          <h1 className="text-4xl lg:text-5xl font-bold">Seja um parceiro!</h1>
+          <h1 className="text-5xl lg:text-6xl font-bold">Seja um parceiro!</h1>
           <p className="text-lg lg:text-xl mt-4">
             Escolha o plano que melhor se adapta ao seu objetivo!
           </p>
@@ -55,7 +55,7 @@ export default function Planos() {
           {planos.map((plano, index) => (
             <div
               key={index}
-              className={`card w-full lg:w-[23rem] h-[31rem] relative ${
+              className={`card w-full lg:w-[23rem] h-[32rem] relative ${
                 plano.highlighted
                   ? "bg-gradient-to-br from-[#1b1b1b] via-[#111111] to-[#0d0d0d] scale-105 border-[0.5px] border-[#00bb83] shadow-lg"
                   : "bg-[#101010] border-[0.5px] border-[#252525] hover:border-[#00bb83] transition-all duration-200"
@@ -67,11 +67,11 @@ export default function Planos() {
                 </div>
               )}
               <div className="mb-5 mt-8">
-                <h2 className="text-3xl font-bold mb-3">{plano.title}</h2>
+                <h2 className="text-4xl font-bold mb-3">{plano.title}</h2>
 
-                <p className="text-4xl font-bold mb-5 text-[#2bd6a3]">
+                <h2 className="text-5xl font-bold mb-5 text-[#2bd6a3]">
                   {plano.price}
-                </p>
+                </h2>
                 <p className="text-md mb-8">{plano.description}</p>
 
                 <div>
@@ -79,8 +79,8 @@ export default function Planos() {
                     {plano.benefits.map((benefit, i) => (
                       <li key={i} className="text-md flex flex-row gap-2 items-center">
                         <span
-                          className="material-icons text-[#00bb83]"
-                          style={{ fontSize: "24px" }}
+                          className="material-icons rounded-full bg-[#252525] p-1 text-[#00bb83]"
+                          style={{ fontSize: "18px" }}
                         >
                           check
                         </span>
