@@ -1,25 +1,37 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);  
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50">
+      <header className={`fixed top-0 left-0 w-full z-50 ${isScrolled ? 'bg-[#090909]' : ''}`}>
         <div className="h-14 hidden sm:flex lg:h-10 flex-row items-center justify-center bg-[#00bb83]">
           <p className="text-white text-[13px] text-center lg:text-[15px]">
             20% de desconto nos planos - Faça parte da nossa comunidade!
           </p>
         </div>
 
-        <nav className="flex justify-between bg-[#090909] items-center py-7 px-6 md:px-24">
+        <nav className="flex justify-between items-center py-7 px-6 md:px-24">
           <a href="/" aria-label="Ir para a página inicial">
             <Image
               src="/next.svg"
@@ -83,13 +95,14 @@ export default function Navbar() {
       </header>
 
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 transition-opacity duration-300 ${
+        className={`z-20 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 transition-opacity duration-300 ${
           isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={toggleMenu}
       ></div>
+      
       <div
-        className={`fixed top-[4rem] pb-4 border-b border-[#252525] left-0 w-full bg-[#090909] text-white transition-transform duration-300 ease-in-out transform ${
+        className={`fixed top-[4rem] z-20 pt-6 pb-4 left-0 w-full bg-[#090909] text-white transition-transform duration-300 ease-in-out transform ${
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
