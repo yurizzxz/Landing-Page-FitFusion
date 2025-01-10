@@ -13,11 +13,12 @@ export default function Navbar() {
   return (
     <>
       <header className="fixed top-0 left-0 w-full z-50">
-        <div className="h-10 flex flex-row items-center justify-center bg-[#00bb83]">
-          <p className="text-white text-[15px]">
+        <div className="h-14 hidden sm:flex lg:h-10 flex-row items-center justify-center bg-[#00bb83]">
+          <p className="text-white text-[13px] text-center lg:text-[15px]">
             20% de desconto nos planos - Faça parte da nossa comunidade!
           </p>
         </div>
+
         <nav className="flex justify-between bg-[#090909] items-center py-7 px-6 md:px-24">
           <a href="/" aria-label="Ir para a página inicial">
             <Image
@@ -33,13 +34,13 @@ export default function Navbar() {
               onClick={toggleMenu}
               className="text-white focus:outline-none"
             >
-              <div className="w-6 h-0.5 bg-white mb-2"></div>
-              <div className="w-6 h-0.5 bg-white mb-2"></div>
+              <div className="w-6 h-0.5 bg-white mb-1"></div>
+              <div className="w-6 h-0.5 bg-white mb-1"></div>
               <div className="w-6 h-0.5 bg-white"></div>
             </button>
           </div>
 
-          <ul className="hidden md:flex gap-9 text-gray-200 hover:text-[#00bb83] transition-colors">
+          <ul className="hidden md:flex gap-9 text-gray-200">
             <li>
               <a
                 href="#home"
@@ -88,7 +89,7 @@ export default function Navbar() {
         onClick={toggleMenu}
       ></div>
       <div
-        className={`fixed top-[7rem] left-0 w-full bg-[#090909] text-white transition-transform duration-300 ease-in-out transform ${
+        className={`fixed top-[4rem] pb-4 border-b border-[#252525] left-0 w-full bg-[#090909] text-white transition-transform duration-300 ease-in-out transform ${
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >

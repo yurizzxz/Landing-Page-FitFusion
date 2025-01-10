@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <>
       <Navbar />
-      <section className="min-h-screen bg-[#070707] text-white pt-20" id="home">
-        <div className="container flex flex-col items-center justify-center mx-auto text-center px-6 lg:px-12 min-h-[calc(95vh-150px)]">
+      <section className="min-h-[calc(90vh-120px)] lg:min-h-screen bg-[#070707] text-white pt-20" id="home">
+        <div className="container flex flex-col items-center justify-center mx-auto text-left lg:text-center px-4 lg:px-12 min-h-[calc(95vh-150px)]">
           <div className="absolute inset-0 -z-10">
             <Image
               src="/hero-background.jpg"
@@ -17,25 +17,25 @@ export default function Hero() {
             />
           </div>
 
-          <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-5xl md:text-center lg:text-6xl font-bold leading-tight mb-6">
             Bem-vindo ao <span className="text-[#00bb83]">FitFusion</span>!
           </h1>
 
-          <p className="text-lg lg:text-xl max-w-2xl mx-auto mb-8">
+          <p className="text-lg md:text-center lg:text-xl md:max-w-2xl mx-auto mb-8">
             Transforme sua jornada fitness com nossos programas e recursos
             especialmente criados. Comece hoje e alcance seus objetivos!
           </p>
 
-          <div className="flex flex-col w-full lg:flex-row justify-center gap-4">
+          <div className="flex flex-col w-full md:flex-row justify-center gap-4 text-center">
             <a
               href="/start"
-              className="bg-[#101010] border w-full lg:w-[15rem] border-[#252525] text-[#00bb83] px-7 py-4 rounded-full font-semibold shadow-md hover:border-[#00bb83] transition-all"
+              className="bg-[#00bb83] border w-full md:w-[15rem] border-[#252525] text-[#fff] px-7 py-4 rounded-full font-semibold shadow-md hover:border-[#00bb83] transition-all"
             >
               Começar Agora
             </a>
             <a
               href="/learn-more"
-              className="border border-[#fff] w-full lg:w-[15rem] px-7 py-4 rounded-full font-semibold hover:bg-[#101010] hover:text-[#00bb83] transition-all"
+              className="border border-[#fff] w-full md:w-[15rem] px-7 py-4 rounded-full font-semibold hover:bg-[#101010] hover:text-[#00bb83] transition-all"
             >
               Saiba Mais
             </a>
