@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function About() {
   return (
     <main
-      className="min-h-[calc(90vh-200px)] border-t border-b border-[#151515] bg-[#070707] text-white pt-14"
+      className="min-h-[calc(90vh-200px)] border-t border-b border-[#151515] bg-[#070707] text-white pt-10"
       id="about"
     >
-      <section className="container py-24 flex flex-col lg:flex-row-reverse items-center justify-between mx-auto px-4">
+      <section className="container pt-20 pb-28 flex flex-col lg:flex-row-reverse items-center justify-between mx-auto px-4">
         <article className="lg:w-1/2 flex pl-0 lg:pl-10 flex-col items-start mb-8 lg:mb-0">
           <header>
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
@@ -38,13 +38,13 @@ export default function About() {
           </p>
         </article>
 
-        <figure className="lg:w-1/3 mt-6 lg:mt-0">
+        <figure className="lg:w-1/2 flex justify-center items-center mt-6 lg:mt-0">
           <Image
-            src="/next.svg"
+            src="/screens.png"
             alt="FitFusion"
-            width={400}
-            height={400}
-            className="w-full h-auto object-cover rounded-lg"
+            width={800}
+            height={800}
+            className="w-full h-auto object-contain rounded-lg"
           />
         </figure>
       </section>
