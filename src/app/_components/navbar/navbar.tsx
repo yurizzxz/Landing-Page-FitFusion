@@ -37,7 +37,7 @@ export default function Navbar() {
         </div>
 
         <nav className="flex justify-between items-center py-7 px-6 md:px-24">
-          <Link href="" aria-label="Ir para a página inicial">
+          <Link href="/" aria-label="Ir para a página inicial">
             <Image
               src="/logo png.png"
               alt="FitFusion Logo"
@@ -91,7 +91,10 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="#faq" className="hover:text-[#00bb83] transition-colors">
+              <Link
+                href="#faq"
+                className="hover:text-[#00bb83] transition-colors"
+              >
                 Perguntas frequentes
               </Link>
             </li>
@@ -114,29 +117,29 @@ export default function Navbar() {
         <div className="py-5 px-6">
           <ul className="flex flex-col gap-6">
             <li>
-              <a href="#home" className="hover:text-[#00bb83]">
+              <Link href="#home" className="hover:text-[#00bb83]">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="hover:text-[#00bb83]">
+              <Link href="#about" className="hover:text-[#00bb83]">
                 Sobre
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#functions" className="hover:text-[#00bb83]">
+              <Link href="#functions" className="hover:text-[#00bb83]">
                 Funções
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#plans" className="hover:text-[#00bb83]">
+              <Link href="#plans" className="hover:text-[#00bb83]">
                 Planos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#faq" className="hover:text-[#00bb83]">
+              <Link href="#faq" className="hover:text-[#00bb83]">
                 Perguntas Frequentes
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
