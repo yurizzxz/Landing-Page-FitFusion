@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 export default function Planos() {
   const planos = [
     {
@@ -94,12 +97,12 @@ export default function Planos() {
                 </div>
               </div>
               <div className="mt-auto">
-                <a
-                  href={plano.url}
+                <Link
+                  href={plano.url} target="_blank" rel="noopener noreferrer"
                   className="bg-[#00bb83] text-center block text-white px-6 w-full py-2 rounded-lg border border-[#00bb83] transition-colors"
                 >
                   Assine Agora
-                </a>
+                </Link>
               </div>
             </div>
           ))}

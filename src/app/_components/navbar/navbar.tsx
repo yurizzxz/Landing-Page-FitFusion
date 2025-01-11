@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,14 +37,14 @@ export default function Navbar() {
         </div>
 
         <nav className="flex justify-between items-center py-7 px-6 md:px-24">
-          <a href="/" aria-label="Ir para a página inicial">
+          <Link href="" aria-label="Ir para a página inicial">
             <Image
               src="/logo png.png"
               alt="FitFusion Logo"
               width={150}
               height={100}
             />
-          </a>
+          </Link>
 
           <div className="md:hidden">
             <button
@@ -58,41 +59,41 @@ export default function Navbar() {
 
           <ul className="hidden md:flex gap-9 text-gray-200">
             <li>
-              <a
+              <Link
                 href="#home"
                 className="hover:text-[#00bb83] transition-colors"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#about"
                 className="hover:text-[#00bb83] transition-colors"
               >
                 Sobre
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#functions"
                 className="hover:text-[#00bb83] transition-colors"
               >
                 Funções
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#plans"
                 className="hover:text-[#00bb83] transition-colors"
               >
                 Planos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#faq" className="hover:text-[#00bb83] transition-colors">
+              <Link href="#faq" className="hover:text-[#00bb83] transition-colors">
                 Perguntas frequentes
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
