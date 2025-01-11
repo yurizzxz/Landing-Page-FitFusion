@@ -32,7 +32,7 @@ export default function Funcoes() {
       <section className="container mx-auto px-4">
         <header className="mt-14 lg:text-center">
           <h1 className="text-5xl lg:text-6xl font-bold mb-14">
-            Funcionalidades
+            O <span className="text-[#00bb83]">que</span> oferecemos?
           </h1>
         </header>
         <div className="cardSection flex justify-center flex-col lg:flex-row gap-4">

@@ -45,7 +45,7 @@ export default function Planos() {
     >
       <div className="container mx-auto items-center px-5">
         <header className="lg:text-center mb-16 mt-28 lg:mt-16">
-          <h1 className="text-5xl lg:text-6xl font-bold">Seja um parceiro!</h1>
+          <h1 className="text-5xl lg:text-6xl font-bold">Seja nosso <span className="text-[#00bb83]">parceiro</span>!</h1>
           <p className="text-lg lg:text-xl mt-4">
             Escolha o plano que melhor se adapta ao seu objetivo!
           </p>
@@ -57,7 +57,7 @@ export default function Planos() {
               key={index}
               className={`card w-full lg:w-[23rem] h-[32rem] relative ${
                 plano.highlighted
-                  ? "bg-gradient-to-br from-[#1b1b1b] via-[#111111] to-[#0d0d0d] scale-105 border-[0.5px] border-[#00bb83] shadow-lg"
+                  ? "bg-gradient-to-br from-[#1a1a1a] via-[#0c0c0c] to-[#080808] scale-105 border-[0.5px] border-[#00bb83] shadow-lg"
                   : "bg-[#101010] border-[0.5px] border-[#252525] hover:border-[#00bb83] transition-all duration-200"
               } py-12 px-5 flex flex-col items- rounded-lg`}
             >
@@ -77,7 +77,10 @@ export default function Planos() {
                 <div>
                   <ul className="flex flex-col justify-center gap-2 text-left mb-4 w-full list-none space-y-2">
                     {plano.benefits.map((benefit, i) => (
-                      <li key={i} className="text-md flex flex-row gap-2 items-center">
+                      <li
+                        key={i}
+                        className="text-md flex flex-row gap-2 items-center"
+                      >
                         <span
                           className="material-icons rounded-full bg-[#252525] p-1 text-[#00bb83]"
                           style={{ fontSize: "18px" }}
@@ -91,7 +94,7 @@ export default function Planos() {
                 </div>
               </div>
               <div className="mt-auto">
-              <a
+                <a
                   href={plano.url}
                   className="bg-[#00bb83] text-center block text-white px-6 w-full py-2 rounded-lg border border-[#00bb83] transition-colors"
                 >

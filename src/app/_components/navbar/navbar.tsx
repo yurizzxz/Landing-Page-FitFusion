@@ -13,18 +13,22 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);  
+      setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-50 ${isScrolled ? 'bg-[#090909]' : ''}`}>
+      <header
+        className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+          isScrolled || isMenuOpen ? "bg-[#090909]" : "bg-transparent"
+        }`}
+      >
         <div className="h-14 hidden sm:flex lg:h-10 flex-row items-center justify-center bg-[#00bb83]">
           <p className="text-white text-[13px] text-center lg:text-[15px]">
             20% de desconto nos planos - Faça parte da nossa comunidade!
@@ -34,9 +38,9 @@ export default function Navbar() {
         <nav className="flex justify-between items-center py-7 px-6 md:px-24">
           <a href="/" aria-label="Ir para a página inicial">
             <Image
-              src="/next.svg"
+              src="/logo png.png"
               alt="FitFusion Logo"
-              width={100}
+              width={150}
               height={100}
             />
           </a>
@@ -100,9 +104,9 @@ export default function Navbar() {
         }`}
         onClick={toggleMenu}
       ></div>
-      
+
       <div
-        className={`fixed top-[4rem] z-20 pt-6 pb-4 left-0 w-full bg-[#090909] text-white transition-transform duration-300 ease-in-out transform ${
+        className={`fixed top-[2rem] z-20 pt-10 pb-4 left-0 w-full bg-[#090909] text-white transition-transform duration-300 ease-in-out transform ${
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >

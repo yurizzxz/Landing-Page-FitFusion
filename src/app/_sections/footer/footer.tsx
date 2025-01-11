@@ -23,8 +23,8 @@ export default function Footer() {
             Termos de Serviço
           </a>
           <div className="mt-4 lg:mt-0">
-            <button className="bg-[#00bb83] text-white px-6 py-3 rounded-full hover:bg-[#00a373] transition-all">
-              Inscreva-se
+            <button className="bg-[#00bb83] text-white px-6 py-3 rounded-md  hover:bg-[#00a373] transition-all">
+              Contate-nos
             </button>
           </div>
         </div>

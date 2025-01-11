@@ -24,9 +24,9 @@ export default function FAQ() {
           <header className="mt-14 lg:text-center">
             <h1 className="text-5xl lg:text-6xl font-bold mb-14">Perguntas Frequentes</h1>
           </header>
-          <div className="faqSection flex flex-col gap-4">
+          <div className="faqSection flex flex-col ">
             {faqs.map((faq, index) => (
-              <details key={index} className="border border-[#252525] rounded-lg bg-[#101010] p-6 mb-4">
+              <details key={index} open={index === 0} className="border border-[#252525] rounded-lg bg-[#101010] py-8 px-7 mb-4">
                 <summary className="cursor-pointer text-lg font-semibold flex justify-between items-center text-white">
                   <span>{faq.question}</span>
                   <span className="material-icons text-[#00bb83]">expand_more</span>
@@ -38,5 +38,4 @@ export default function FAQ() {
         </section>
       </main>
     );
-  }
-  
+}
