@@ -6,7 +6,7 @@ O **FitFusion** combina um **painel web** para proprietários de academias e um 
 
 ---
 
-## 📝 **Descrição do Projeto**
+## 📝 **O que contem no FitFusion?**
 - **Painel Web**: Ferramenta para gerenciar alunos, planos de treino e relatórios de engajamento.
 - **App para Alunos**: Acesso a treinos personalizados, dietas geradas por IA e artigos científicos.
 - **Foco em Automação**: Redução de tarefas manuais para maior eficiência.
