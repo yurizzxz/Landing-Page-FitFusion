@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FitFusion
 
-## Getting Started
+### Solução Completa para Gestão de Academias
 
-First, run the development server:
+O **FitFusion** combina um **painel web** para proprietários de academias e um **aplicativo para alunos**, oferecendo um ecossistema integrado para otimizar a gestão, personalizar treinos, gerar dietas inteligentes e proporcionar experiências únicas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 **Descrição do Projeto**
+- **Painel Web**: Ferramenta para gerenciar alunos, planos de treino e relatórios de engajamento.
+- **App para Alunos**: Acesso a treinos personalizados, dietas geradas por IA e artigos científicos.
+- **Foco em Automação**: Redução de tarefas manuais para maior eficiência.
+- **Personalização**: Treinos e dietas adaptados às necessidades de cada aluno.
+- **Inovação**: Uso de inteligência artificial para gerar dietas e oferecer conteúdos científicos.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 **Tecnologias Utilizadas**
 
-## Learn More
+### **TypeScript**
+- Superset do JavaScript que adiciona tipagem estática e ferramentas de desenvolvimento robustas.
+- Facilita a manutenção e escalabilidade do código.
 
-To learn more about Next.js, take a look at the following resources:
+### **Next.js**
+- Framework React para renderização híbrida (SSR e SSG) e roteamento avançado.
+- Ideal para construir aplicações web rápidas e otimizadas para SEO.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Tailwind CSS**
+- Framework CSS utilitário que permite criar designs modernos de forma eficiente.
+- Focado na customização e velocidade de desenvolvimento.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Obrigado por ler até aqui!**
