@@ -44,7 +44,7 @@ export default function About() {
             alt="FitPilot"
             width={500}
             height={500}
-            className="w-full h-auto object-contain rounded-lg"
+            className="object-contain rounded-lg"
           />
         </figure>
       </section>
