@@ -26,7 +26,7 @@ export default function FAQ() {
         </header>
         <div className="faqSection flex flex-col ">
           {faqs.map((faq, index) => (
-            <details key={index} className="border border-[#252525] rounded-lg bg-[#101010] py-8 px-7 mb-4">
+            <details key={index} className="border border-[#252525] rounded-lg bg-[#101010] py-8 px-7 mb-2">
               <summary className="cursor-pointer text-lg font-semibold flex justify-between items-center text-white">
                 <span>{faq.question}</span>
                 <span className="material-icons text-[#00bb83]">expand_more</span>
