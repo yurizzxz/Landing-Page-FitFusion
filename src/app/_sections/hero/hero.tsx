@@ -23,7 +23,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg md:text-center lg:text-xl md:max-w-3xl mx-auto mb-8 relative z-1">
-            Com o FitFusion, seus alunos têm acesso a treinos práticos e podem
+            Com o FitPilot, seus alunos têm acesso a treinos práticos e podem
             criar dietas personalizadas com Inteligência Artificial.
           </p>
 

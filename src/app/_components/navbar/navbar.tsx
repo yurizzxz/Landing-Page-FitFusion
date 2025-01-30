@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import WhatsAppButton from "../whatsApp/whatsApp";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,11 +37,11 @@ export default function Navbar() {
           </p>
         </div>
 
-        <nav className="flex justify-between items-center py-7 px-6 md:px-24">
+        <nav className="flex justify-between items-center py-3.5 px-6 md:px-24">
           <Link href="/" aria-label="Ir para a página inicial">
             <Image
-              src="/logo png.png"
-              alt="FitFusion Logo"
+              src="/letter.png"
+              alt="FitPilot Logo"
               width={150}
               height={100}
             />
@@ -144,6 +145,11 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
+
+      <WhatsAppButton
+        phoneNumber="5511999999999"
+        message="Olá, boa tarde! Gostaria de saber mais sobre os serviços."
+      />
     </>
   );
 }
