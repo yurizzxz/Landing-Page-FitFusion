@@ -59,10 +59,6 @@ export default function Planos() {
 
   const [isAnual, setIsAnual] = useState(false);
 
-  const handleToggle = () => {
-    setIsAnual(!isAnual);
-  };
-
   return (
     <section
       className="min-h-[calc(90vh-200px)] border-b border-[#151515] bg-[#070707] text-white pb-28 pt-12"
