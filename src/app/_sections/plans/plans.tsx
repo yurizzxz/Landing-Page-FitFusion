@@ -117,9 +117,12 @@ export default function Planos() {
                 )}
                 <div className="mb-5 mt-8">
                   <h2 className="text-4xl font-bold mb-3">{plano.title}</h2>
-                  <h2 className="text-5xl font-bold mb-5 text-[#2bd6a3]">
+                  <h2 className="text-5xl font-bold mb-3 text-[#2bd6a3]">
                     R$ {valorAjustado.toFixed(2)}/mês
                   </h2>
+                  <p className="text-sm font-bold mb-3 text-gray-400">
+                   Total de R$ {(valorAjustado * 12).toFixed(2)}/ano
+                  </p>
                   <p className="text-md mb-8">{plano.description}</p>
 
                   <div>
